@@ -51,3 +51,14 @@ Other environment agnostic settings can be changed in `config/app.php`.
 The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
 framework by default. You can, however, replace it with any other library or
 custom styles.
+# How to run
+## Set up
+
+```bash
+docker-compose up -d
+docker-compose exec php bash
+
+cd /app
+composer install
+sh bin/cake migrations migrate
+```
